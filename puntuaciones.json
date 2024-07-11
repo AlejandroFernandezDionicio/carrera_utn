@@ -1,14 +1,10 @@
 [
     {
-        "nombre": "ale\r",
-        "puntaje": 50
+        "nombre": "pepe",
+        "puntaje": 20
     },
     {
-        "nombre": "olga\r",
-        "puntaje": 10
-    },
-    {
-        "nombre": "pepe\r",
+        "nombre": "alejandro",
         "puntaje": 0
     }
 ]

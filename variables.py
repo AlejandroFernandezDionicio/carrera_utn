@@ -1,6 +1,7 @@
 import pygame
-from biblioteca import*
+from funciones import*
 pygame.init()
+
 # LISTAS 
 lista_preguntas = crear_listas(lista,"pregunta")
 lista_respuestas_a = crear_listas(lista,"a")
@@ -17,6 +18,7 @@ score = 0
 ubicacion = 0
 ingreso = ""
 segundos = "5"
+tiempo_juego = "120"
 
 # CARGA DE IMAGENES
 imagen_carrera_utn = pygame.image.load("imagen_utn.PNG")
@@ -28,7 +30,6 @@ imagen_estudiante = pygame.transform.scale(imagen_estudiante,(140, 140))
 
 # EVENTOS DE USUARIO
 tiempo = pygame.USEREVENT
-
 # ESTABLECER TIEMPO
 pygame.time.set_timer(tiempo, 1000)
 
@@ -54,3 +55,7 @@ mostrar_juego = True
 tabla = False
 fin_tiempo = False
 archivo_creado = False
+
+# PANTALLA
+pantalla = pygame.display.set_mode((1300, 900))
+pygame.display.set_caption("VIDEOJUEGO")
